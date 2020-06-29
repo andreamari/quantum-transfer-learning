@@ -1,15 +1,15 @@
 
 # Supplementary numerical simulations
-In the review process of the work [arXiv:1912.08278](https://arxiv.org/abs/1912.08278), the referees suggested to make some additional numerics with the aim of clarifying the relationship our quantum machine learning models with respect to classical methods.
+In the review process of the work [arXiv:1912.08278](https://arxiv.org/abs/1912.08278), it was suggested to make some additional numerics with the aim of clarifying the relationship our quantum machine learning models with respect to classical methods.
 In this folder we share this material since it could be of some interest also to other researchers and quantum programmers.
 
 
 ## Contents
-* `dressed_circuit_different_shape.ipynb`: Jupyter notebook where a dressed quantum circuit is used to classify a non-linearly separated dataset of points. Differently from the spiral shape used in [arXiv:1912.08278](https://arxiv.org/abs/1912.08278), in this notebook a different distribution of the points is used.
+* `dressed_circuit_different_shape.ipynb`: Jupyter notebook where a dressed quantum circuit is used to classify a non-linearly separated dataset of points. Differently from the spiral shape used in [arXiv:1912.08278](https://arxiv.org/abs/1912.08278), in this notebook different distributions of points are used.
 
 * `direct_classification_with_RESTNET18.ipynb`: Jupyter notebook where the ResNet18 network, which in the notation of [arXiv:1912.08278](https://arxiv.org/abs/1912.08278) is called network _A_, is directly used to classify images of _ants_ and _bees_. 
 
-* `transfer_learning_ants_bees_classical.ipynb`: Jupyter notebook where the ResNet18 network, which in the notation of [arXiv:1912.08278](https://arxiv.org/abs/1912.08278) is called network _A_, is modified by removing the final layer to obtain a shorter network _A'_ with 512 output nodes. In order to adapt the output nodes of _A'_ to the specific classification of  _ants_ and _bees_, a final classical layer with with 2 output nodes is appended to _A'_ and trained for this task. Moreover, in the same notebook, the last classical layer can also be replaced by more complex networks.
+* `transfer_learning_ants_bees_classical.ipynb`: Jupyter notebook where the ResNet18 network, which in the notation of [arXiv:1912.08278](https://arxiv.org/abs/1912.08278) is called network _A_, is modified by removing the final layer to obtain a shorter network _A'_ with 512 output nodes. In order to adapt the output nodes of _A'_ to the specific classification of  _ants_ and _bees_, a final classical layer with with 2 output nodes is appended to _A'_ and trained for this task.
 
 
 ## Usage
@@ -20,7 +20,7 @@ To visualize the content of the Jupyter notebooks without running the code there
 
 To open and run a local copy of a notebook one should apply the following steps:
 
-1. If missing, install [JupyterLab](https://jupyter.org/install).
+1. If missing, install [JupyterLab or Jupyter Notebook](https://jupyter.org/install).
 2. Run the command:
 ```
 $ jupyter notebook
@@ -31,7 +31,7 @@ $ jupyter notebook
 ## Requirements
 
 #### Software
-All notebooks require the installation of JupiterLab with a Python 3 kernel. In addition the library matplotlib is required for generating plots and images.
+The library matplotlib is required for generating plots and images.
 
 The notebook `dressed_circuit_different_shape.ipynb` requires the Python library PennyLane.
 
